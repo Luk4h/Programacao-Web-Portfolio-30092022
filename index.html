@@ -4,48 +4,54 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/dist/output.css" rel="stylesheet">
-  
   <link href="https://fonts.googleapis.com/css?family=Inter:400,700,900|Work+Sans:400,700,900&display=swap" rel="stylesheet">
 
 </head>
-<body class="w-screen overflow-x-hidden">
-    <div class="px-4 md:px-12 md:pr-80 md:pl-80 py-8">
-        <div class="pb-16 h-24 grid grid-cols-3 col-span-3 md:py-2">
-            <div class="grid md:grid-cols-4 content-center justify-center uppercase font-semibold md:gap-4">
-                <a class="text-xs flex content-center justify-center" href="#Home">Home</a>
-                <a class="text-xs flex content-center justify-center" href="#About-me">About</a>
-                <a class="text-xs flex content-center justify-center" href="#Works">Work</a>
-                <a class="text-xs flex content-center justify-center" href="#Contact">Contact</a>
+<body>
+    <div class="lg:pr-80 lg:pl-80 py-8">
+        <div class="h-16 w-100 py-2 grid grid-cols-3 col-span-3">
+            <div class="h-100 flex flex-col md:grid grid-cols-4 content-center justify-center uppercase font-semibold sm:gap-5 text-sm">
+                <a class="flex content-center justify-center" href="#Home">Home</a>
+                <a class="flex content-center justify-center" href="#About-me">About</a>
+                <a class="flex content-center justify-center" href="#Works">Work</a>
+                <a class="flex content-center justify-center" href="#Contact">Contact</a>
             </div>
             <div class="flex content-center justify-center">
-                <h1 class="flex content-center justify-center self-center font-medium font-Inter tracking-wide">Luiz Gustavo</h1>
+                <img src="/assets/Luiz-Gustavo.svg" width="100vw" class="flex content-center justify-center self-center font-medium font-Inter tracking-wide"/>
             </div>
-            <div class="flex content-center justify-center self-center gap-2 lg:gap-4">
-                <a href="https://github.com/Luk4h"><img class="w-5 h-5" src="./assets/github.png"></a>
-                <a href="https://www.instagram.com/luk4hh/"><img class="w-5 h-5" src="./assets/instagram.png"></a>
-                <a href="https://www.linkedin.com/in/luizgustavomarcondes/"><img class="w-5 h-5" src="./assets/linkedin.png"></a>
+            <div class="flex content-center justify-center self-center gap-4">
+                <a href="https://github.com/Luk4h"><img class="w-5 h-5" src="/assets/github.png"></a>
+                <a href="https://www.instagram.com/luk4hh/"><img class="w-5 h-5" src="/assets/instagram.png"></a>
+                <a href="https://www.linkedin.com/in/luizgustavomarcondes/"><img class="w-5 h-5" src="/assets/linkedin.png"></a>
             </div>
         </div>
-        <div id="Home" class="pb-24 w-100 grid columns-1">
-            <span class="flex content-center justify-center text-xs md:text-6xl font-medium font-Work pb-8">Hello, I'm Luiz Gustavo. 👋</span>
-            <span class="flex content-center justify-center text-2xl md:text-8xl font-bold font-Work">Full-Stack Developer</span>
+        <div id="Home" class="py-44 w-100 grid columns-1">
+            <h1 class="flex content-center justify-center text-xl md:text-6xl font-medium font-Work pb-8">Hello, I'm Luiz Gustavo. 👋</h1>
+            <h1 class="flex content-center justify-center text-3xl md:text-8xl font-bold font-Work">Full-Stack Developer</h1>
         </div>
-        <div id="About-me" class="w-100 px-8 pb-14 grid content-center justify-center align-middle grid-cols-3 gap-4 md:gap-20">
+        <div id="About-me" class="md:h-screen w-100 px-12 grid content-center justify-center align-middle grid-cols-3 gap-20 pb-12">
             <div class="">
-                <img src="./assets/20220802_233838.jpg"/>
+                <img src="/assets/20220802_233838.jpg"/>
             </div>
             <div class="col-span-2 content-evenly">
-                <h1 class="flex content-center justify-center md:text-5xl font-bold font-Inter pb-4 md:pb-24 px-4">Developing, Building and coding are a type of art.</h1>
-                <h2 class="flex content-center justify-center md:text-xl font-medium font-Work pb-8">I treat every piece of code, as a piece of art. Making sure every line is fast, clean and clear. The success is something that you build with dedication.</h2>
-                <button class="rounded-full bg-slate-600 px-8 lg:py-2 color text-white">Let's Talk!</button>
+                <h1 class="flex content-center justify-center text-xl md:text-5xl font-bold font-Inter pb-4 md:pb-24">Developing, Building and coding are a type of art.</h1>
+                <h2 class="flex content-center justify-center text-md md:text-xl font-medium font-Work pb-8">I treat every piece of code, as a piece of art. Making sure every line is fast, clean and clear. The success is something that you build with dedication.</h2>
+                <button class="rounded-full bg-slate-600 px-8 py-2 color text-white">Let's Talk!</button>
             </div>
         </div>
-        <div id="Skills" class="w-100 px-8 grid content-center justify-center align-middle items-center md:grid-cols-3 lg:gap-20 pb-14">
-            <div class="col-span-2">
+        <div id="Skills" class="w-100 md:grid content-center justify-center align-middle items-center md:grid-cols-3 md:gap-20 pb-14">
+            <div class="">
+                <div class="flex justify-center items-center pb-8">
+                    <h1 class="flex content-center justify-center text-4xl md:text-6xl font-bold font-Work pr-4">Skills?</h1>
+                    <span class="text-2xl font-semibold font-Inter "> I got many!</span>
+                </div>
+                <img class="hidden md:block" src="/assets/20220802_233838.jpg"/>
+            </div>
+            <div class="flex justify-center flex-col px-4 md:col-span-2">
                 <div class="pb-10">
                     <div class="pb-6">
                         <div class="flex items-center pb-2">
-                            <img class="w-10 h-10" src="./assets/Typescript.png">
+                            <img class="w-10 h-10" src="/assets/Typescript.png">
                             <h2 class="pl-4 text-4xl font-semibold ">Typescript</h2>
                         </div>
                         <span class="text-xl">Gotta Type them all!</span>
@@ -55,7 +61,7 @@
                 <div class="pb-10">
                     <div class="pb-6">
                         <div class="flex items-center pb-2">
-                            <img class="w-10 h-10" src="./assets/Node-js.png">
+                            <img class="w-10 h-10" src="/assets/Node-js.png">
                             <h2 class="pl-4 text-4xl font-semibold ">Node.Js</h2>
                         </div>
                         <span class="text-xl">node party.js 🎉</span>
@@ -65,34 +71,27 @@
                 <div class="pb-10">
                     <div class="pb-6">
                         <div class="flex items-center pb-2">
-                            <img class="w-10 h-10" src="./assets/React.png">
-                            <h2 class="lg:pl-4 text-4xl font-semibold ">React</h2>
+                            <img class="w-10 h-10" src="/assets/React.png">
+                            <h2 class="pl-4 text-4xl font-semibold ">React</h2>
                         </div>
                         <span class="text-xl">Responsive as possible.</span>
                     </div>
                     <span class="text-xl">React helps you work smarter, not harder, by allowing you to re-use components you've already written across the same application and on totally different builds with similar functionality. Reusable components also help to maintain a consistent code style and the overall maintainability of the application.</span>
                 </div>
             </div>
-            <div class="hidden">
-                <div class="flex items-center pb-8">
-                    <h1 class="flex content-center justify-center text-6xl font-bold font-Work lg:pr-4">Skills?</h1>
-                    <span class="text-2xl font-semibold font-Inter"> I got many!</span>
-                </div>
-                <img class="hidden" src="./assets/20220802_233838.jpg"/>
-            </div>
         </div>
-        <div id="Works" class="px-8 content-center justify-center align-middle items-center pb-36">
-            <h1 class="flex content-center justify-center text-4xl md:text-5xl font-bold font-Work pb-24">Some of the projects I've worked on. 🛠️</h1>
+        <div id="Works" class="content-center justify-center align-middle items-center pb-36 px-6">
+            <h1 class="flex content-center justify-center text-xl md:text-5xl font-bold font-Work pb-8 md:pb-24">Some of the projects I've worked on. 🛠️</h1>
             <div>
-                <h2 class="flex content-center justify-center md:text-4xl font-bold font-Work pb-8" >Cia du Banho E-commerce</h2>
-                <img class="h-100" src="./assets/Cia-du-Banho.png"/>
+                <h2 class="flex content-center justify-center text-xl md:text-4xl font-Work pb-8" >Cia du Banho E-commerce</h2>
+                <img class="h-100" src="/assets/Cia-du-Banho.png"/>
             </div>
         </div>
-        <div id="Contact" class="px-8 content-center justify-center align-middle items-center pb-24">
-            <h1 class="flex content-center justify-center text-lg md:text-5xl font-bold font-Work pb-4">Let's build together!</h1>
-            <h2 class="flex content-center justify-center text-md md:text-4xl font-medium font-Work pb-16">Get in touch.</h2>
+        <div id="Contact" class="content-center justify-center align-middle items-center pb-24 px-6">
+            <h1 class="flex content-center justify-center text-xl md:text-5xl font-bold font-Work pb-4">Let's build together!</h1>
+            <h2 class="flex content-center justify-center text-4xl font-medium font-Work pb-16">Get in touch.</h2>
             <div class="flex content-center justify-center">
-                <form class="w-4/5 md:w-3/5 grid content-center grid-cols-1 gap-6 justify-center items-center">
+                <form class="w-3/5 grid content-center grid-cols-1 gap-6 justify-center items-center">
                     <div class="grid grid-cols-1 gap-2">
                         <label>Name or Company</label>
                         <input type="text" class="rounded border-none bg-slate-200 text-black placeholder:italic placeholder:text-slate-400" placeholder="My Company Inc." />
@@ -110,7 +109,7 @@
             </div>
         </div>
     </div>
-    <div class="w-100 px-12 bg-zinc-900 flex justify-between text-white lg:px-12">
+    <div class="w-screen bg-zinc-900 flex justify-between text-white px-12">
         <span>@Luk4hh</span>
         <span>Portfolio 2022</span>
     </div>
